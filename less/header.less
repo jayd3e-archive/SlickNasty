@@ -1,0 +1,24 @@
+@default: #FFF;
+@highlight: #D91515;
+@bg_bottom: #000;
+@bg_top: #FFF;
+@base_font_size: 11px;
+
+.header {
+
+    // type
+    .main_nav, .side_nav {
+        
+        .li {
+            font-size: @base_font_size;
+            color: @default;   
+
+            &:hover {
+                color: @highlight;
+            }
+        }
+    }
+
+    // style
+    height: 41px;
+}
