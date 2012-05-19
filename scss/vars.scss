@@ -5,19 +5,27 @@
 */
 
 // Bootstrap
-$bgColor: #33363B;
+$bgColor: #2D2D2D;
+$FColor: #CC3333;
+$iconFont: 'IconicFill';
 
 // Elements
-$topBGColor: #52a96c;
+$topTopBGColor: #333;
+$topBotBGColor: #222;
 $headerHeight: 35px;
 $headerBGColor: #2B608C;
-$pageBGColor: #AEC3D3;
+$pageMargin: 10px;
+$pageBGColor: #FFF;
 $asideWidth: 250px;
-$asideBGColor: #56AD81;
+$asideBGColor: #FFF;
 $elementPadding: 5px;
+
+// Navigation
+$navLinkColor: #FFF;
 
 // Type
 $baseFontSize: 11px;
 $sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headingsColor: #000;
 $headingsFontWeight: 300;
+$linkColor: #407CC2;

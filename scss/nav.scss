@@ -1,0 +1,24 @@
+/*
+*
+* This file handles all variations of navigation lists.
+*
+*/
+
+.nav {
+    float: left;
+    margin-right: 10px;
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            padding: 12px 5px;
+            color: $navLinkColor;
+
+            &:hover {
+                color: $FColor;
+            }
+        }
+    }
+}

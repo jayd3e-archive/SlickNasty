@@ -40,7 +40,7 @@ p {
 
 a {
     text-decoration: none;
-    font-size: 11px;
-    color: #FFF;
+    font-size: $baseFontSize;
+    color: $linkColor;
     font-family: $sansFontFamily;
 }

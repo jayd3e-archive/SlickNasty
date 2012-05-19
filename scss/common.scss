@@ -12,3 +12,13 @@
     width: 100%;
     position: relative;
 }
+
+@mixin gradient($top, $bot, $image:"None") {
+    background-color: $bot; 
+    background-image: url($image); 
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($top), to($bot));
+    background-image: -webkit-linear-gradient(top, $top, $bot); 
+    background-image: -moz-linear-gradient(top, $top, $bot);
+    background-image: -ms-linear-gradient(top, $top, $bot);
+    background-image: -o-linear-gradient(top, $top, $bot);
+}

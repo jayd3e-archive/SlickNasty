@@ -7,7 +7,7 @@
 
 .top {
     width: 100%;
-    background-color: $topBGColor;
+    @include gradient($topTopBGColor, $topBotBGColor);
 }
 
 .main {
@@ -17,8 +17,9 @@
 
 .header {
     height: $headerHeight;
-    background-color: $headerBGColor;
     padding: $elementPadding;
+    margin: 0px $pageMargin;
+    overflow: auto;
 }
 
 .page {
@@ -26,6 +27,7 @@
     background-color: $pageBGColor;
     padding: $elementPadding $asideWidth $elementPadding $elementPadding;
     overflow: hidden;
+    margin: $pageMargin;
 }
 
 .aside {
@@ -34,5 +36,70 @@
     background-color: $asideBGColor;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: $pageMargin;
+    padding: 5px;
+}
+
+.logo {
+    float: left;
+    height: 21px;
+    width: 116px;
+    background-image: url("../img/clusterflunk_logo.png");
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.search {
+    float: left;
+
+    input {
+        width: 150px;
+        height: 20px;
+        border: none;
+        margin: 5px 0px;
+        padding: 2px 10px;
+        float: left;
+        color: #555;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        border: none;
+        padding: 6px;
+        margin: 5px 0px;
+        background-color: #555;
+        font-family: $iconFont;
+        float: left;
+        color: #FFF;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.account {
+    float: right;
+
+    li {
+        float: right;
+
+        a {
+            display: block;
+            padding: 12px 5px;
+            color: $navLinkColor;
+
+            &:hover {
+                color: $FColor;
+            }
+        }
+
+        a.avatar {
+            display: block;
+            padding: 7px 2px 5px 2px;
+        }
+    }
 }
