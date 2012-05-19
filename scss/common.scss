@@ -1,0 +1,14 @@
+/*
+*
+* This file is supplementary to all of the other style definitions.  It is simply reinforcing a convention
+* for each new site, so that common elements such as a header, footer, main_container, etc. can be reused.
+*
+*/
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 960px;
+    width: 100%;
+    position: relative;
+}

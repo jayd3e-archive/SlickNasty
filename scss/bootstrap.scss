@@ -1,12 +1,30 @@
+/*
+*
+* This file simply loads all of the necessary stylesheets, as well as sets
+* a few classes that have a global scope.
+*
+*/
+
 // Libs
-@import "libs/grid.scss";
 @import "libs/reset.scss";
 
 // Fonts
 @import "fonts/iconic/iconic_fill.scss";
 
+@import "vars.scss";
 @import "buttons.scss";
 @import "elements.scss";
 @import "form.scss";
 @import "nav_list.scss";
 @import "type.scss";
+@import "common.scss";
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $bgColor;
+}
+
+.clear {
+    clear: both;
+}

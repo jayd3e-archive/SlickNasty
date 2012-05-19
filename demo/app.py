@@ -5,6 +5,8 @@ from pyramid.config import Configurator
 def main(global_config, **settings):
     '''Main config function'''
     settings['mako.directories'] = 'templates'
+    settings['pyramid.reload_templates'] = True
+        
     config = Configurator(settings=settings)
 
     config.add_renderer('.html', 'pyramid.mako_templating.renderer_factory')
@@ -14,7 +16,6 @@ def main(global_config, **settings):
     config.add_static_view(name='static', path=os.sep.join(root_path))
 
     config.add_route('home', '/')
-    config.add_route('dynamic', '/dynamic')
 
     config.scan('.')
     return config.make_wsgi_app()
@@ -22,11 +23,6 @@ def main(global_config, **settings):
 @view_config(route_name='home',
              renderer='index.mako')
 def home(request):
-    return {}
-
-@view_config(route_name='dynamic',
-             renderer='dynamic.mako')
-def dynamic(request):
     return {}
 
 if __name__ == '__main__':

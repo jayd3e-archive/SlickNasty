@@ -1,4 +1,38 @@
-.container-fixed {
-    width: 960px;
-    margin: 0 auto;
+/*
+*
+* "Elements" are parts of the page that box off certain content with a very specific style.
+* This includes containers and wells.
+*
+*/
+
+.top {
+    width: 100%;
+    background-color: $topBGColor;
+}
+
+.main {
+    width: 100%;
+    background-color: $bgColor;
+}
+
+.header {
+    height: $headerHeight;
+    background-color: $headerBGColor;
+    padding: $elementPadding;
+}
+
+.page {
+    min-height: 700px;
+    background-color: $pageBGColor;
+    padding: $elementPadding $asideWidth $elementPadding $elementPadding;
+    overflow: hidden;
+}
+
+.aside {
+    width: $asideWidth;
+    min-height: 200px;
+    background-color: $asideBGColor;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }

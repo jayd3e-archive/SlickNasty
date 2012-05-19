@@ -1,7 +1,18 @@
 <%inherit file="layouts/base.mako"/>
 
 <%def name="body()">
-    <div class="container-fixed">
-        <h1>SlickNasty - Fixeda</h1>
+    <div class="top">
+        <div class="container">
+            <div class="header">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="page">
+            </div>
+            <div class="aside">
+            </div>
+        </div>
     </div>
 </%def>
