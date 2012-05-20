@@ -13,6 +13,7 @@
 .main {
     width: 100%;
     background-color: $bgColor;
+    text-align: center;
 }
 
 .header {
@@ -28,6 +29,7 @@
     padding: $elementPadding $asideWidth $elementPadding $elementPadding;
     overflow: hidden;
     margin: $pageMargin;
+    text-align: left;
 }
 
 .aside {
@@ -38,6 +40,7 @@
     top: 0px;
     right: $pageMargin;
     padding: 5px;
+    text-align: left;
 }
 
 .logo {

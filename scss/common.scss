@@ -22,3 +22,19 @@ body {
     width: 100%;
     position: relative;
 }
+
+.auth_container {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $headingsLightColor;
+    }
+
+    .basic, .inline-form, .horiz-form {
+        label {
+            color: $labelsLightColor;
+        }
+    }
+}

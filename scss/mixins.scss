@@ -47,3 +47,14 @@
     font-family: $sansFontFamily;
     color: $baseFontColor;
 }
+
+@mixin default_input {
+    @include gradient($inputTopColor, $inputBotColor);
+    font-family: $sansFontFamily;
+    padding: 7px;
+    margin: 0;
+    font-size: 13px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    color: $inputColor;
+}

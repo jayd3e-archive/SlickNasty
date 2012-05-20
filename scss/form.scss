@@ -3,3 +3,72 @@
 * This file handles every tag related to forms.
 *
 */
+
+@mixin form {
+    margin-bottom: 20px;
+    display: inline-block;
+
+    label {
+        font-family: $sansFontFamily;
+        font-size: 12px;
+        color: $baseFontColor;
+    }
+
+    input {
+        @include default_input;
+        @include button;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+form.basic {
+    @include form;
+
+    label {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+form.inline-form {
+    @include form;
+}
+
+form.horiz-form {
+    @include form;
+
+    .input_group {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        label {
+            display: inline-block;
+            width: 130px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .inputs {
+            display: inline;
+
+            input {
+                display: inline-block;
+            }
+        }
+    }
+
+    .form_actions {
+        border-top: 1px solid #e1e1e1;
+        padding-top: 5px;
+        padding-left: 143px;
+    }
+}
