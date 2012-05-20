@@ -4,6 +4,7 @@
 * a few classes that have a global scope.
 *
 */
+@import "vars.scss";
 
 // Libs
 @import "libs/reset.scss";
@@ -11,7 +12,7 @@
 // Fonts
 @import "libs/iconic_fill.scss";
 
-@import "vars.scss";
+// Files
 @import "mixins.scss";
 @import "common.scss";
 @import "buttons.scss";

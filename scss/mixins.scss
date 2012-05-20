@@ -35,3 +35,15 @@
     border-right: $size solid transparent;
     border-top: $size solid $color;
 }
+
+/*
+*
+* Utilities
+*
+*/
+
+@mixin baseFont {
+    font-size: $baseFontSize;
+    font-family: $sansFontFamily;
+    color: $baseFontColor;
+}
