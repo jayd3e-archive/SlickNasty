@@ -22,6 +22,15 @@
             outline: none;
         }
     }
+
+    textarea {
+        @include default_input;
+        @include gradient(#FFF, #FFF);
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 form.basic {
@@ -51,10 +60,11 @@ form.horiz-form {
         padding-bottom: 5px;
 
         label {
+            float: left;
             display: inline-block;
             width: 130px;
             text-align: right;
-            padding-right: 10px;
+            padding: 5px 10px 0px 0px;
         }
 
         .inputs {
