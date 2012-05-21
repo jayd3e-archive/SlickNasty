@@ -16,6 +16,8 @@ def main(global_config, **settings):
     config.add_static_view(name='static', path=os.sep.join(root_path))
 
     config.add_route('home', '/')
+    config.add_route('forms', '/forms')
+    config.add_route('auth', '/auth')
 
     config.scan('.')
     return config.make_wsgi_app()
@@ -23,6 +25,16 @@ def main(global_config, **settings):
 @view_config(route_name='home',
              renderer='index.mako')
 def home(request):
+    return {}
+
+@view_config(route_name='forms',
+             renderer='forms.mako')
+def form(request):
+    return {}
+
+@view_config(route_name='auth',
+             renderer='auth.mako')
+def auth(request):
     return {}
 
 if __name__ == '__main__':
