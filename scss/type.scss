@@ -8,6 +8,8 @@ h1, h2, h3, h4, h5, h6 {
     color: $headingsColor;
     font-family: $sansFontFamily;
     font-weight: $headingsFontWeight;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -35,7 +37,10 @@ h6 {
 }
 
 p {
-    font-size: 12px;
+    @include baseFont;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: $baseFontSize + 3px;
 }
 
 a {
@@ -43,4 +48,43 @@ a {
     font-size: $baseFontSize;
     color: $linkColor;
     font-family: $sansFontFamily;
+}
+
+pre {
+    line-height: $baseFontSize + 3px;
+    border: 1px solid #DDD;
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+
+@mixin styled_list($type) {
+    line-height: $baseFontSize + 3px;
+    padding-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    @if $type == "ul" { list-style: disc; }
+    @if $type == "ol" { list-style: decimal; }
+    
+    li {
+        @include baseFont;
+    }
+}
+
+// Cover all the bases for styling lists
+.styled_lists {
+    ul {
+        @include styled_list("ul");
+    }
+
+    ol {
+        @include styled_list("ol");
+    }
+}
+
+ul.styled_list {
+    @include styled_list("ul");
+}
+
+ol.styled_list {
+    @include styled_list("ol");
 }

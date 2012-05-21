@@ -3,3 +3,50 @@
 * This file defines the look of all of the buttons.  This includes dropdown buttons.
 *
 */
+
+@mixin hover {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin button {
+    display: inline-block;
+
+    &.default {
+        @include default_input;
+        @include hover;
+    }
+
+    &.primary {
+        @include default_input;
+        @include hover;
+        @include gradient($inputPrimaryTopColor, $inputPrimaryBotColor);
+        border: 1px solid $inputPrimaryTopColor;
+        color: $inputPrimaryTextColor;
+    }
+
+    &.danger {
+        @include default_input;
+        @include hover;
+        @include gradient($inputDangerTopColor, $inputDangerBotColor);
+        border: 1px solid $inputDangerTopColor;
+        color: $inputDangerTextColor;
+    }
+
+    &.success {
+        @include default_input;
+        @include hover;
+        @include gradient($inputSuccessTopColor, $inputSuccessBotColor);
+        border: 1px solid $inputSuccessTopColor;
+        color: $inputSuccessTextColor;
+    }
+}
+
+button {
+    @include button;
+}
+
+a {
+    @include button;
+}
