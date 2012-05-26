@@ -1,0 +1,19 @@
+#page {
+    min-height: 700px;
+    background-color: $pageBGColor;
+    padding: $pageVertPadding $asideWidth $pageVertPadding $pageLeftPadding;
+    overflow: hidden;
+    margin: $pageMargin;
+    text-align: left;
+}
+
+#aside {
+    width: $asideWidth;
+    min-height: 200px;
+    background-color: $asideBGColor;
+    position: absolute;
+    top: 0px;
+    right: $pageMargin;
+    padding: 5px;
+    text-align: left;
+}

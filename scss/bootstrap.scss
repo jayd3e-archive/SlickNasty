@@ -12,11 +12,16 @@
 // Fonts
 @import "libs/iconic_fill.scss";
 
-// Files
-@import "mixins.scss";
-@import "common.scss";
-@import "buttons.scss";
-@import "elements.scss";
-@import "form.scss";
-@import "nav.scss";
-@import "type.scss";
+// Core
+@import "core/mixins.scss";
+@import "core/common.scss";
+@import "core/buttons.scss";
+@import "core/form.scss";
+@import "core/type.scss";
+@import "core/lists.scss";
+@import "core/nav.scss";
+
+// Layout
+@import "layouts.scss";
+@import "header.scss";
+@import "main.scss";

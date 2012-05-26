@@ -1,0 +1,83 @@
+#header {
+    height: $headerHeight;
+    padding: $headerPadding;
+    margin: 0px $pageMargin;
+    overflow: auto;
+
+    #logo {
+        float: left;
+        height: 21px;
+        width: 116px;
+        margin-top: 6px;
+        margin-right: 10px;
+        background-image: url('../img/clusterflunk_logo.png');
+    }
+
+    #main_nav {
+        
+    }
+
+    #search {
+        float: left;
+
+        input {
+            width: 150px;
+            height: 20px;
+            border: none;
+            margin: 5px 0px;
+            padding: 2px 10px;
+            float: left;
+            color: #555;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            border: none;
+            padding: 6px;
+            margin: 5px 0px;
+            background-color: #555;
+            font-family: $iconFont;
+            float: left;
+            color: #FFF;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #account {
+        float: right;
+
+        li {
+            float: right;
+
+            a {
+                display: block;
+                padding: 11px 5px;
+                font-size: $headerLinkSize;
+                color: $navLinkColor;
+
+                &:hover {
+                    color: $FColor;
+                }
+            }
+
+            a.avatar {
+                display: block;
+                padding: 7px 2px 5px 2px;
+            }
+
+            span {
+                display: block;
+                padding: 10px 5px;
+                font-family: $sansFontFamily;
+                font-size: $baseFontSize;
+                color: $accountSpanColor;
+            }
+        }
+    }
+}

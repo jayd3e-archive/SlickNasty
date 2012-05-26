@@ -8,12 +8,11 @@
         <script src="/static/js/libs/jquery-1.7.2.js"></script>
     </head>
     <body>
-    	<div class="top">
+    	<div id="top">
 	        <div class="container">
-	            <div class="header">
-	                <div class="logo">
-	                </div>
-	                <ul class="nav">
+	            <header id="header">
+	                <div id="logo"></div>
+	                <ul id="main_nav" class="nav">
 	                    <li>
 	                        <a href="/">Elements</a>
 	                    </li>
@@ -30,10 +29,10 @@
 	                        <a href="#">Vars</a>
 	                    </li>
 	                </ul>
-	                <div class="search">
+	                <div id="search">
 	                    <input type="text" name="search"/><button>&#xe074;</button>
 	                </div>
-	                <ul class="account">
+	                <ul id="account">
 	                    <li>
 	                        <a href="/logout">sign out</a>
 	                    </li>
@@ -49,14 +48,14 @@
 	            </div>
 	        </div>
 	    </div>
-	    <div class="main">
+	    <div id="main">
 	        <div class="container">
-	            <div class="page">
+	            <article id="page">
 	            	${ self.page() }
-	            </div>
-	            <div class="aside">
+	            </article>
+	            <aside id="aside">
 	            	${ self.aside() }
-	            </div>
+	            </aside>
 	        </div>
 	    </div>
     </body>

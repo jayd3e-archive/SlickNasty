@@ -1,0 +1,17 @@
+/*
+*
+* "Layouts" are parts of the page that box off certain content with a very specific style.
+* This includes containers and wells.
+*
+*/
+
+#top {
+    width: 100%;
+    @include gradient($topTopBGColor, $topBotBGColor);
+}
+
+#main {
+    width: 100%;
+    background-color: $bgColor;
+    text-align: center;
+}
