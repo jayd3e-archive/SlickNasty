@@ -43,18 +43,18 @@
 */
 
 @mixin baseFont {
-    font-size: $baseFontSize;
-    font-family: $sansFontFamily;
-    color: $baseFontColor;
+    font-size: $slicknasty-base-font-size;
+    font-family: $slicknasty-sans-font-family;
+    color: $slicknasty-base-font-color;
 }
 
 @mixin default_input {
-    @include gradient($inputTopColor, $inputBotColor);
-    font-family: $sansFontFamily;
+    @include gradient($slicknasty-input-top-color, $slicknasty-input-bot-color);
+    font-family: $slicknasty-sans-font-family;
     padding: 7px;
     margin: 0;
     font-size: 13px;
     border: 1px solid silver;
     border-radius: 5px;
-    color: $inputColor;
+    color: $slicknasty-input-color;
 }

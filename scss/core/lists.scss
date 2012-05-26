@@ -5,7 +5,7 @@
 */
 
 @mixin styled_list($type) {
-    line-height: $baseFontSize + 3px;
+    line-height: $slicknasty-base-font-size + 3px;
     padding-left: 30px;
     margin-top: 5px;
     margin-bottom: 10px;

@@ -5,9 +5,9 @@
 */
 
 h1, h2, h3, h4, h5, h6 {
-    color: $headingsColor;
-    font-family: $sansFontFamily;
-    font-weight: $headingsFontWeight;
+    color: $slicknasty-headings-color;
+    font-family: $slicknasty-sans-font-family;
+    font-weight: $slicknasty-headings-font-weight;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -40,18 +40,18 @@ p {
     @include baseFont;
     margin-top: 5px;
     margin-bottom: 10px;
-    line-height: $baseFontSize + 3px;
+    line-height: $slicknasty-base-font-size + 3px;
 }
 
 a {
     text-decoration: none;
-    font-size: $baseFontSize;
-    color: $linkColor;
-    font-family: $sansFontFamily;
+    font-size: $slicknasty-base-font-size;
+    color: $slicknasty-link-color;
+    font-family: $slicknasty-sans-font-family;
 }
 
 pre {
-    line-height: $baseFontSize + 3px;
+    line-height: $slicknasty-base-font-size + 3px;
     border: 1px solid #DDD;
     padding: 10px;
     background-color: #FAFAFA;

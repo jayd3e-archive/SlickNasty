@@ -7,11 +7,11 @@
 
 #top {
     width: 100%;
-    @include gradient($topTopBGColor, $topBotBGColor);
+    @include gradient($slicknasty-top-top-bg-color, $slicknasty-top-bot-bg-color);
 }
 
 #main {
     width: 100%;
-    background-color: $bgColor;
+    background-color: $slicknasty-bg-color;
     text-align: center;
 }
