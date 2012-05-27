@@ -10,12 +10,13 @@
 
     label {
         font-family: $slicknasty-sans-font-family;
-        font-size: 12px;
+        font-size: 11px;
         color: $slicknasty-base-font-color;
+        text-transform: capitalize;
     }
 
     input {
-        @include default_input;
+        @include default_text_input;
         @include button;
 
         &:focus {
@@ -24,8 +25,7 @@
     }
 
     textarea {
-        @include default_input;
-        @include gradient(#FFF, #FFF);
+        @include default_text_input;
 
         &:focus {
             outline: none;
@@ -43,7 +43,7 @@ form.basic {
 
     input {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 }
 

@@ -8,8 +8,8 @@ h1, h2, h3, h4, h5, h6 {
     color: $slicknasty-headings-color;
     font-family: $slicknasty-sans-font-family;
     font-weight: $slicknasty-headings-font-weight;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h1 {
@@ -36,6 +36,11 @@ h6 {
     font-size: 14px;
 }
 
+span {
+    @include baseFont;
+    line-height: $slicknasty-base-font-size + 3px;
+}
+
 p {
     @include baseFont;
     margin-top: 5px;
@@ -48,6 +53,7 @@ a {
     font-size: $slicknasty-base-font-size;
     color: $slicknasty-link-color;
     font-family: $slicknasty-sans-font-family;
+    cursor: pointer;
 }
 
 pre {

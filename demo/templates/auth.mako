@@ -25,7 +25,7 @@
         <input id="password" name="password" type="password" value="">
         
         <button class="primary">Register</button>
-        <button class="default">Cancel</button>
+        <button class="light">Cancel</button>
     </form>
 </%def>
 
@@ -54,7 +54,7 @@
         <input id="password" name="password" type="password" value="">
         
         <button class="primary">Login</button>
-        <button class="default">Cancel</button>
+        <button class="light">Cancel</button>
     </form>
 </%def>
 

@@ -17,6 +17,19 @@
     }
 }
 
+@mixin horiz-list {
+    display: block;
+    overflow: auto;
+
+    li {
+        float: left;
+
+        > a {
+            display: block;
+        }
+    }
+}
+
 // Cover all the bases for styling lists
 .styled_lists {
     ul {
@@ -34,4 +47,8 @@ ul.styled_list {
 
 ol.styled_list {
     @include styled_list("ol");
+}
+
+.horiz-list {
+    @include horiz-list;
 }

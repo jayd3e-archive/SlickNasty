@@ -13,32 +13,38 @@
 @mixin button {
     display: inline-block;
 
-    &.default {
-        @include default_input;
+    &.dark {
+        @include default_button;
         @include hover;
+        background-color: $slicknasty-input-dark-color;
+        color: $slicknasty-input-dark-text-color;
+    }
+
+    &.light {
+        @include default_button;
+        @include hover;
+        background-color: $slicknasty-input-light-color;
+        
     }
 
     &.primary {
-        @include default_input;
+        @include default_button;
         @include hover;
         @include gradient($slicknasty-input-primary-top-color, $slicknasty-input-primary-bot-color);
-        border: 1px solid $slicknasty-input-primary-top-color;
         color: $slicknasty-input-primary-text-color;
     }
 
     &.danger {
-        @include default_input;
+        @include default_button;
         @include hover;
         @include gradient($slicknasty-input-danger-top-color, $slicknasty-input-danger-bot-color);
-        border: 1px solid $slicknasty-input-danger-top-color;
         color: $slicknasty-input-danger-text-color;
     }
 
     &.success {
-        @include default_input;
+        @include default_button;
         @include hover;
         @include gradient($slicknasty-input-success-top-color, $slicknasty-input-success-bot-color);
-        border: 1px solid $slicknasty-input-success-top-color;
         color: $slicknasty-input-success-text-color;
     }
 }

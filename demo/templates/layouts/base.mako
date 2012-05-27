@@ -11,8 +11,8 @@
         <div id="top">
             <div class="container">
                 <header id="header">
-                    <div id="logo"></div>
-                    <ul id="main_nav" class="horiz-nav">
+                    <a href="/" id="logo"></a>
+                    <ul id="main_nav">
                         <li>
                             <a href="/">Elements</a>
                         </li>

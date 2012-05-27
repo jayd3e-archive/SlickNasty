@@ -10,13 +10,25 @@
         width: 116px;
         margin-top: 6px;
         margin-right: 10px;
+        cursor: pointer;
         background-image: url('../img/clusterflunk_logo.png');
     }
 
     #main_nav {
+        @include horiz-list;
+        float: left;
+        margin-right: 10px;
+        display: inline-block;
+
         li {
+
             > a {
+                color: $slicknasty-nav-link-color;
                 padding: 12px 3px 5px 3px;
+
+                &:hover {
+                    color: $slicknasty-f-color;
+                }
             }
         }
     }
@@ -61,7 +73,7 @@
 
             a {
                 display: block;
-                padding: 11px 5px;
+                padding: 9px 5px;
                 font-size: $slicknasty-header-link-size;
                 color: $slicknasty-nav-link-color;
 
@@ -72,7 +84,7 @@
 
             a.avatar {
                 display: block;
-                padding: 7px 2px 5px 2px;
+                padding: 5px 2px 5px 2px;
             }
 
             span {

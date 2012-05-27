@@ -1,7 +1,9 @@
+$right-padding: $slicknasty-aside-width + (2 * $slicknasty-aside-padding) + 10px;
+
 #page {
     min-height: 700px;
     background-color: $slicknasty-page-bg-color;
-    padding: $slicknasty-page-vert-padding $slicknasty-aside-width $slicknasty-page-vert-padding $slicknasty-page-left-padding;
+    padding: $slicknasty-page-vert-padding $right-padding $slicknasty-page-vert-padding $slicknasty-page-left-padding;
     overflow: hidden;
     margin: $slicknasty-page-margin;
     text-align: left;
@@ -14,6 +16,6 @@
     position: absolute;
     top: 0px;
     right: $slicknasty-page-margin;
-    padding: 5px;
+    padding: $slicknasty-aside-padding;
     text-align: left;
 }

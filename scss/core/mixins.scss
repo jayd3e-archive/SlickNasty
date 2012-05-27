@@ -49,12 +49,29 @@
 }
 
 @mixin default_input {
-    @include gradient($slicknasty-input-top-color, $slicknasty-input-bot-color);
     font-family: $slicknasty-sans-font-family;
-    padding: 7px;
     margin: 0;
-    font-size: 13px;
-    border: 1px solid silver;
+    color: $slicknasty-input-text-color;
+}
+
+@mixin default_button {
+    @include default_input;
+    padding: 6px;
+    font-size: 11px;
     border-radius: 5px;
-    color: $slicknasty-input-color;
+    border: 0px;
+    text-transform: uppercase;
+}
+
+@mixin default_text_input {
+    @include default_input;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid silver;
+    color: $slicknasty-input-text-color;
+    background-color: #FFF;
+
+    &:focus {
+        border: $slicknasty-input-border;
+    }
 }
